@@ -20,7 +20,7 @@ class Warehouse(object):
 
 def main():
     warehouse = Warehouse()
-    Pyro4.Daemon.serveSimple({warehouse:"example.warehouse"}, ns=False)
+    Pyro4.Daemon.serveSimple({warehouse:"example.warehouse"}, ns=True)
 
 if __name__=="__main__":
     main()
